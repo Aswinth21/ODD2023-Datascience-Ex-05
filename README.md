@@ -19,8 +19,8 @@ Save the data to the file
 
 
 ## CODE
-#Developed by: Aswinth T
-#Register number : 212222230015
+# Developed by: Aswinth T
+# Register number : 212222230015
 
 ## Data:
 
