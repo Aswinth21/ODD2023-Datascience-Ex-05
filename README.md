@@ -23,7 +23,7 @@ Save the data to the file
 # Register number : 212222230015
 
 ## Data:
-
+```
 import pandas as pd
 df=pd.read_csv("data.csv")
 print(df)
@@ -56,8 +56,9 @@ edu=['High School','Diploma','Bachelors','Masters','PhD']
 oe2=OrdinalEncoder(categories=[edu])
 df1['Ord_2']= oe2.fit_transform(df1[["Ord_2"]])
 df1
-
+```
 ## SCALING:
+```
 from sklearn.preprocessing import MinMaxScaler
 sc=MinMaxScaler()
 df2=pd.DataFrame(sc.fit_transform(df1),columns=(['id', 'bin_1', 'bin_2', 'City', 'Ord_1','Ord_2','Target']))
@@ -77,15 +78,16 @@ from sklearn.preprocessing import RobustScaler
 sc3=RobustScaler()
 df5=pd.DataFrame(sc3.fit_transform(df1),columns=['id', 'bin_1', 'bin_2', 'City', 'Ord_1','Ord_2','Target'])
 df5
-
+```
 
 ## Encoding data:
-
+```
 import pandas as pd
 df=pd.read_csv("Encoding Data.csv")
 df
-
+```
 ## GENERATION
+```
 import category_encoders as ce
 be=ce.BinaryEncoder()
 ndf=be.fit_transform(df["bin_1"])
@@ -108,8 +110,9 @@ temp=['Cold','Warm','Hot']
 oe2=OrdinalEncoder(categories=[temp])
 df1['ord_2'] = oe2.fit_transform(df1[['ord_2']])
 df1
-
+```
 ## SCALING:
+```
 from sklearn.preprocessing import MinMaxScaler
 sc=MinMaxScaler()
 df0=pd.DataFrame(sc.fit_transform(df1),columns=['id', 'bin_1', 'bin_2', 'nom_0','ord_2'])
@@ -129,7 +132,7 @@ from sklearn.preprocessing import RobustScaler
 sc3=RobustScaler()
 df4=pd.DataFrame(sc3.fit_transform(df1),columns=['id', 'bin_1', 'bin_2', 'nom_0','ord_2'])
 df4
-
+```
 
 
 ## OUTPUT
